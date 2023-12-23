@@ -32,6 +32,7 @@
 		2507F5F72B36487600B028B5 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		2507F5F92B37035100B028B5 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		2507F5FB2B370B6100B028B5 /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoaderTests.swift; sourceTree = "<group>"; };
+		2530FF8C2B3712F300E687DD /* EssentialFeed.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = EssentialFeed.xctestplan; sourceTree = "<group>"; };
 		25C2E5192B30B27600E3D176 /* EssentialFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25C2E51C2B30B27600E3D176 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25C2E51E2B30B27600E3D176 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +74,7 @@
 		25C2E5102B30B27600E3D176 = {
 			isa = PBXGroup;
 			children = (
+				2530FF8C2B3712F300E687DD /* EssentialFeed.xctestplan */,
 				25C2E51B2B30B27600E3D176 /* EssentialFeed */,
 				25C2E5322B30B27800E3D176 /* EssentialFeedTests */,
 				25C2E51A2B30B27600E3D176 /* Products */,
@@ -164,7 +166,6 @@
 					};
 					25C2E52E2B30B27800E3D176 = {
 						CreatedOnToolsVersion = 15.0;
-						TestTargetID = 25C2E5182B30B27600E3D176;
 					};
 				};
 			};
@@ -437,7 +438,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XCLMBC27FD;
@@ -449,7 +449,6 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EssentialFeed.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EssentialFeed";
 			};
 			name = Debug;
 		};
@@ -457,7 +456,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XCLMBC27FD;
@@ -469,7 +467,6 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EssentialFeed.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EssentialFeed";
 			};
 			name = Release;
 		};

@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "312D05BC-95A1-402E-A599-C74AC41EC959",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:EssentialFeed.xcodeproj",
+      "identifier" : "25C2E5182B30B27600E3D176",
+      "name" : "EssentialFeed"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:EssentialFeed.xcodeproj",
+        "identifier" : "25C2E52E2B30B27800E3D176",
+        "name" : "EssentialFeedTests"
+      }
+    }
+  ],
+  "version" : 1
+}
