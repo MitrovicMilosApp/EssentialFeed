@@ -11,9 +11,7 @@ import EssentialFeed
 class RemoteFeedLoaderTests: XCTestCase {
     func test_init() {
         let (_, client) = makeSUT()
-        
         XCTAssertTrue(client.requestedURLs.isEmpty)
-        
     }
 
     func test_load_requestsDataFromURL() {
@@ -33,30 +31,22 @@ class RemoteFeedLoaderTests: XCTestCase {
     
     func test_load_deliversErrorOnClientError() {
         let (sut, client) = makeSUT()
-        
         var capturedErrors = [RemoteFeedLoader.Error]()
         sut.load { capturedErrors.append($0) }
         let clientError = NSError(domain: "Test", code: 0)
         client.complete(with: clientError)
-        
         XCTAssertEqual(capturedErrors, [.connectivity])
     }
     
     func test_load_deliversErrorOnNon200HTTPResponse() {
         let (sut, client) = makeSUT()
-        
         let samples = [199, 201, 300, 400, 500]
-        
         samples.enumerated().forEach { index, code in
             var capturedErrors = [RemoteFeedLoader.Error]()
             sut.load { capturedErrors.append($0) }
-
             client.complete(withStatusCode: code, at: index)
             XCTAssertEqual(capturedErrors, [.invalidData])
-
         }
-        
-        
     }
     
     // MARK: - Helpers
@@ -88,7 +78,6 @@ class RemoteFeedLoaderTests: XCTestCase {
                                            httpVersion: nil,
                                            headerFields: nil)!
             messages[index].completion(.success(response))
-            
         }
     }
 }
