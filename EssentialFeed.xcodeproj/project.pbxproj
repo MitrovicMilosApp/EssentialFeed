@@ -17,6 +17,7 @@
 		25C2E5242B30B27600E3D176 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C2E5222B30B27600E3D176 /* Main.storyboard */; };
 		25C2E5262B30B27700E3D176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25C2E5252B30B27700E3D176 /* Assets.xcassets */; };
 		25C2E5292B30B27700E3D176 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C2E5272B30B27700E3D176 /* LaunchScreen.storyboard */; };
+		25E389F42B49815E00E0A589 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E389F32B49815E00E0A589 /* HTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		25C2E5282B30B27700E3D176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25C2E52A2B30B27700E3D176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25C2E52F2B30B27800E3D176 /* EssentialFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25E389F32B49815E00E0A589 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				2530CB6F2B38AB7A00FC1767 /* RemoteFeedLoader.swift */,
+				25E389F32B49815E00E0A589 /* HTTPClient.swift */,
 			);
 			path = FeedAPI;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				2507F5F82B36487600B028B5 /* FeedItem.swift in Sources */,
 				25C2E5212B30B27600E3D176 /* ViewController.swift in Sources */,
 				25C2E51D2B30B27600E3D176 /* AppDelegate.swift in Sources */,
+				25E389F42B49815E00E0A589 /* HTTPClient.swift in Sources */,
 				2507F5FA2B37035100B028B5 /* FeedLoader.swift in Sources */,
 				2530CB702B38AB7A00FC1767 /* RemoteFeedLoader.swift in Sources */,
 				25C2E51F2B30B27600E3D176 /* SceneDelegate.swift in Sources */,
